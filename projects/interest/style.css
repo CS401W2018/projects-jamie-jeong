@@ -1,13 +1,20 @@
 h1 {
     color: #754C2A;
-   font-family: Georgia, 'Times New Roman', Times, serif
+   font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
 body {
+    background-color: #EFDCCD;
     color: #45250A;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+
+#main-title {
+    color: #754C2A;
+    text-align: center;
+}
+
 .brown {
   color: #754C2A;
 }
@@ -15,10 +22,18 @@ body {
 .darkbrown {
     color:#45250A;
 }
-#color {
+
+.lightbrown {
     color: #9A714E;
 }
 .italic {
     font-style: italic; 
+}
+
+.bold {
     font-weight: bold;
+}
+
+.beige {
+    color: #C19B7B;
 }
