@@ -1,0 +1,36 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: url('blackbg.jpeg') #15255b;
+    /*
+    background-color: #15255b;
+    background-image: url('blackbg.jpeg');
+    */
+   
+    background-size: 55cm;
+    
+    color: whitesmoke;
+}
+
+.italics {font-style: italic;
+
+}
+
+header {
+    /*
+    background-image: url('alienhead.png');
+    background-size: 0.9cm;
+    background-repeat: no-repeat;
+    background-position: top right;
+    */
+    background: url('alienhead.png') top right no-repeat;
+    background-size: 0.9cm;
+    
+}
+
+.mylist {
+    /*list-style-type: none; */
+
+    list-style-image: url('smallmoon.png');
+
+}
+
