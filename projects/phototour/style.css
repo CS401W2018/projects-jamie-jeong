@@ -1,7 +1,40 @@
-body {
+h1 {
+    color: #0d2437;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+h2 {
+    color: #25455F;
+}
+
+header {
+    background: url('emblem.png') top right no-repeat;
+    height: 150px;
+}
+body {
+    background-color: #B9C6D1;
+    color: #0d2437;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: url(sky.jpg) #B9C6D1 repeat;
 }
 
 nav a {
     /*put a link to "a" when you don't want to change the color of the link*/
+}
+
+.mylist {
+    list-style-image: url(flag.png)
+}
+.navy {
+    color: #0d2437;
+}
+
+.italics {
+    color: #0D2437;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.blue {
+    color: #436582;
 }
