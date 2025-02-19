@@ -1,0 +1,33 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav a {
+    background-color: aquamarine;
+    display: block;
+    padding: 10px 5px;
+    border-bottom: 3px thin solid fff;
+}
+
+.moving {
+    position: absolute;
+    top: 300px;
+    right: 300px;
+}
+
+.starsystem {
+    width: 200px;
+    margin: 0%;
+    border: thin solid red;
+    box-shadow: 3px 3px 3px rgba(30,30,30,0,5);
+    font-size: 8pt;
+    float: right; 
+}
+
+.starsystem img {
+    width: 100%;
+}
+
+.clear {
+    clear: both;
+}
