@@ -1,0 +1,16 @@
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+.parent {
+    background-color: rgb(174, 235, 215);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*3개니까 3columns, fr=fractional unit=컴퓨터가 알아서 비율 계산함*/
+    gap: 5px; /*grid 사이에 간격*/
+    grid-template-rows: 20px 20px; 
+}
+
+.child {
+    background-color: rgb(207, 179, 233);
+}
