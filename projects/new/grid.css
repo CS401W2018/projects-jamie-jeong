@@ -14,3 +14,39 @@ body {
 .child {
     background-color: rgb(207, 179, 233);
 }
+
+/*
+#wrapper {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas:"header header header"
+                        "lnside center rside "
+                        "footer footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+#lside {
+    grid-area: rside;
+    background-color: beige;
+}
+
+#rside {
+    grid-area: lside;
+    background-color: beige;
+}
+
+footer {
+    grid-area: footer;
+}
+
+main {
+    grid-area: center;
+}
+
+26 & 27 줄에 이거 넣기
+    <div id="lside">Left</div>
+    <div id="rside">Right</div>
+*/
