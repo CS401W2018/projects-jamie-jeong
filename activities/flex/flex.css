@@ -1,0 +1,35 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(167, 221, 221);
+    justify-content: space-around;
+}
+
+nav a {
+    display: block;
+    background-color: bisque;
+    color: #096109;
+    padding: 5px 10px;
+
+}
+
+
+.featured {
+    order: -1; /*default 값으로 child 값은 0 인데, -1 하면 그보다 더 앞으로?*/
+}
+.parent {
+    background-color: rgb(219, 219, 124);
+    display: flex;
+    /* flex-direction: row;
+      flex-wrap: wrap; */
+    flex-flow: row wrap;
+}
+
+.child {
+    background-color: rgb(224, 174, 224);
+    width: 100px;
+    margin: 10px;
+}
