@@ -1,0 +1,89 @@
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(15, 15, 84);
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(179, 179, 210);
+    color: rgb(15,15,84);
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    background-color: rgb(147, 147, 193);
+    text-decoration: none;
+    color: rgb(15,15,84);
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(147, 147, 193);
+    background-color: rgb(239, 228, 216);
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.profile-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media ONLY screen AND (max-width:900px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .feature {
+        order: -1;
+    }
+}
+
+@media ONLY screen AND (max-width: 700px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid #fff; 
+    }
+
+    
+}
