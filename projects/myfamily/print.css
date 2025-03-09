@@ -8,7 +8,7 @@ body {
 header {
     background-color: #ffc145;
     color: #db0000;
-    page-break-before: always;
+    /*page-break-before: always;*/
     margin-bottom: 20px;
 }
 
@@ -48,7 +48,7 @@ aside {
     flex: 1;
     max-width: 30%;
     overflow: auto;
-    page-break-inside: avoid;
+    /*page-break-inside: avoid;*/
     background-color: #f4f4f4;
     padding: 20px;
 }
@@ -63,7 +63,7 @@ aside img {
 aside {
     max-height: 100%;
     overflow: auto;
-    page-break-inside: avoid;
+    /*page-break-inside: avoid;*/
 }
 
 .row {
@@ -80,7 +80,7 @@ aside {
     text-align: center;
     border-radius: 10px;
     box-sizing: border-box;
-    page-break-inside: avoid;
+    /*page-break-inside: avoid;*/
 }
 
 
