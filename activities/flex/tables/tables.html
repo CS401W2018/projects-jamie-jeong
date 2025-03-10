@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <header>
+        <h1>Web Design</h1>
+    </header>
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Department</th>
+                    <th>Number</th>
+                    <th>Time</th>
+                    <th>Location</th>
+                    <th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th colspan="5">Winter 2025</th>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td rowspan="2">140</td>
+                    <td>11:00-11:50 AM</td>
+                    <td>P2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>12:00-12:50 AM</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>210</td>
+                    <td>2:00-2:50 PM</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>320</td>
+                    <td>3:00-3:50 PM</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th colspan="5">Spring 2025</th>
+                </tr>
+                <tr>
+                    <td>CS</td>
+                    <td>210</td>
+                    <td>2:00-2:50 PM</td>
+                    <td>P3</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th id="total-credits" colspan="4">Total Credits</th>
+                    <td header="total-credits">15</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>When do you use a table?</h4>
+        <p>When we organize the data in rows and columns, and in case of we need the structure that is convenience to compare.</p>
+        <h4>When do you not use a table?</h4>
+        <p>When we create a layout and need to just align texts.</p>
+        <h4>When do you need to do extra work for table accessibility?</h4>
+        <p>Extra work is needed when a table is complex, contains form inputs, is used for layout, needs screen reader support, or requires a description.</p>
+    </main>
+    <footer>
+        <p>&copy; 2025 Jihye Jeong</p>
+    </footer>
+</body>
+</html>
