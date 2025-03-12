@@ -1,3 +1,38 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.schedule {
+   /* border: 3px solid #16522a;*/
+    box-shadow: 3px 3px 3px rgba(86, 44, 0, 0.5);
+    caption-side: bottom;
+    border-spacing: 0; /* 0px 아니고 0, means it is off*/
+    border-collapse: collapse; /* make 2 borders as one*/
+}
+
+.schedule th, .schedule td {
+    border: thin solid #16522a;
+    /*background-color: rgb(255, 247, 237);*/
+    padding: 5px;
+    vertical-align: middle;
+    border-bottom: thin solid #000;
+}
+
+.schedule thead tr {
+    background-color: #16522a;
+    color: white;
+}
+
+.schedule tfoot tr {
+    background-color: #16522a;
+    color: white;
+}
+
+.schedule tbody tr:nth-child(even){
+    background-color: #cdcdcd;
+}
+
+main p:first-letter {
+    font-size: 30px;
+    color: #16522a;
+}
