@@ -1,0 +1,89 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(255, 246, 230);
+}
+
+nav {
+    display: flex;
+    justify-content:flex-start;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    display: block;
+    padding: 10px 20px;
+    background: #ba0c2f2d;
+    color: #ba0c2f;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c69214;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    background-color: #ba0c2f2d;
+    padding: 15px;
+    margin-left: 20px;
+}
+
+table {
+    width: 75%;
+}
+main {
+    flex: 3;
+}
+.schedule {
+    border: 3px solid #000000ac;
+    box-shadow: 3px 3px 3px rgba(86, 44, 0, 0.5);
+    caption-side: bottom;
+    border-spacing: 0; /* 0px 아니고 0, means it is off*/
+    border-collapse: collapse; /* make 2 borders as one*/
+    background-color: #c6911418;
+}
+
+.schedule th, .schedule td {
+    border: thin solid #16522a;
+    /*background-color: rgb(255, 247, 237);*/
+    padding: 10px;
+    vertical-align: middle;
+    border-bottom: thin solid #000;
+}
+
+.schedule thead tr {
+    background-color: #c69214;
+    color: white;
+}
+
+.schedule td {
+    border-style: dotted;
+}
+
+tr td:hover { 
+    background-color: #ba0c2f;
+    color: #fff;
+}
+
+.schedule tfoot tr {
+    background-color: #16522a;
+    color: white;
+}
+
+.schedule tbody tr:nth-child(even){
+    background-color: #c1c6c89b;
+}
+
+main p:first-letter {
+    font-size: 30px;
+    color: #16522a;
+}
