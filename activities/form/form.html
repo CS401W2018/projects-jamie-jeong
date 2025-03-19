@@ -9,35 +9,48 @@
 <body>
     <header><h1>Web Design</h1></header>
     <main>
-        <form action="processing.html" method="post">
-            <div class="form-row">
-                <label for="fullname">Full Name: </label>
-                <input type="text" name="fullname" required="required" placeholder="Full Name" id="fullname">
-            </div>
-            <div class="form-row">
-                Email: <input type="email" name="email"   value="jamiejeong@go.byuh.edu" id="email">
-            </div>
-            <div>
-                <label for="pass"> Password: </label>
-                <input type="password" name="password" id="pass">
-            </div>
-            <div>
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="blank"></option>
-                    <option value="CO">Colorado</option>
-                    <option value="HI" selected>Hawaii</option>
-                    <option value="UT">Utah</option>
-                </select>
-            </div>
-            <div>
-                <div>Year in School</div>
-                <label><input type="radio" name="year" value="freshman"> Freshman</label>
-                <label><input type="radio" name="year" value="sophomore"> Sophomore</label>
-            </div>
-            <div class="form-row">
-            <input type="submit">
-            </div>
+        <form action="processing.html" method="get">
+            <fieldset>
+                <legend>Account Info</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" name="fullname" required="required" placeholder="Full Name" id="fullname">
+                </div>
+                <div class="form-row">
+                    <label for="email"> Email: </label>
+                    <input type="email" name="email"   value="jamiejeong@go.byuh.edu" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass"> Password: </label>
+                    <input type="password" name="password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" value="freshman"> Freshman</label>
+                    <label><input type="radio" name="year" value="sophomore"> Sophomore</label>
+                </div>
+                <div class="radio-row">
+                         <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked>Remember Me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
         </form>
 
         <h4>The form tag has an "action" attribute. What does it do?</h4>
@@ -46,6 +59,10 @@
         <p>The method attribute defines how the form data should be sent to the server. It can be either GET or POST.</p>
         <h4>What is the difference between a "POST" and a "GET"?</h4>
         <p>GET is sent in the URL, and the data is visible in the URL while POST is sent in the request body, and the data is hidden. Use GET for searching and POST for sensitive data like passwords.</p>
+        <h4>What are different ways to style your form?</h4>
+        <p>float, flex, grid, and etc,.</p>
+        <h4>Why does the professor like to use flex?</h4>
+        <p>It looks good on all screens because it makes the page as responsive page.</p>
     </main>
     <footer>
         <p>&copy;2025 Jihye Jeong</p>
