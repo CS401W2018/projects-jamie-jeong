@@ -1,0 +1,169 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(255, 252, 240);
+    color: #2b2b2b;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+}
+
+input[type="text"]::placeholder {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h2, h5 {
+    line-height: 0.2;
+}
+
+div.form-row {
+    display: flex;
+    align-items: center;  /* 레이블과 인풋을 수평으로 배치 */
+    margin-bottom: 10px;
+}
+
+div {
+    display: flex;
+    align-items: center; /* 세로 정렬 */
+    margin-bottom: 10px;
+}
+
+label {
+    width: 150px; /* 레이블의 고정된 너비 */
+    margin-bottom: 0; /* label의 margin 없애기 */
+    font-weight: bold;
+}
+
+input {
+    flex-grow: 1; /* 인풋이 나머지 공간을 채우도록 */
+    padding: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.dob {
+    display: flex;
+    gap: 10px;
+}
+
+.dob label {
+    display: block;
+}
+
+.dob input {
+    width: 30%;
+    padding: 5px;
+}
+
+.radio-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: center; /* 체크박스와 텍스트를 세로로 정렬 */
+    gap: 8px; /* 체크박스와 텍스트 사이의 간격 */
+    margin-bottom: 15px;
+    justify-content: flex-start;
+}
+
+.gender-options {
+    display: flex;
+    gap: 15px;
+}
+
+.checkbox-row input[type="checkbox"] {
+    margin: 0; /* 체크박스의 기본 margin 제거 */
+}
+
+.checkbox-row label {
+    margin-bottom: 0; /* label의 margin 없애기 */
+}
+
+.gender-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-spacer {
+    width: 150px;
+    text-align: right;
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(122, 68, 13, 0.1);
+}
+
+fieldset {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    /* 레이블을 입력 필드 위로 이동 */
+    .container div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* 텍스트와 입력 필드를 왼쪽 정렬 */
+    }
+
+    /* 제출 버튼 크기 크게 조정 */
+    input[type="submit"] {
+        width: 100%; /* 버튼을 화면 전체 너비로 설정 */
+        padding: 15px 0; /* 버튼을 더 크고 터치하기 쉽게 */
+        font-size: 18px; /* 폰트 크기 조정 */
+    }
+
+    input, select {
+        width: 100%; /* 모바일에서는 너비를 100%로 설정 */
+        font-size: 16px; /* 더 큰 글씨 크기 */
+        padding: 12px; /* 패딩을 더 넓혀서 터치하기 쉽게 만들기 */
+    }
+
+    textarea {
+        width: 80%; /* 화면 크기에 맞게 너비를 100%로 설정 */
+        font-size: 14px; /* 작은 화면에서는 글씨 크기를 줄여서 공간을 절약 */
+        padding: 12px; /* 패딩을 늘려서 터치하기 쉽게 만들기 */
+    }
+
+    /* 모바일에서 필드셋 여백 조정 */
+    fieldset {
+        padding: 10px;
+    }
+
+    /* 폼 내 요소들 간의 간격 조정 */
+    .container div {
+        margin-bottom: 15px; /* 각 항목 간격을 약간 넓힘 */
+    }
+}

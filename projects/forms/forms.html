@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header class="header-content">
+        <img src="logo.png" alt="Resonence Logo">
+        <h2>Sign up now</h2>
+        <h5>Create a free account</h5>
+    </header>
+    <main>
+        <form action="processing.html" method="post" class="container">
+            <fieldset>
+                <div class="form-row">
+                    <label for="email">Email </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password </label>
+                    <input type="password" name="password" id="pass" oninput="checkPasswords()">
+                </div>
+                <div class="form-row">
+                    <label for="confirm-pass">Confirm Password </label>
+                    <input type="password" name="confirm-password" id="confirm-pass" oninput="checkPasswords()">
+                </div>
+                <p id="error-message" style="color: red; display: none;">Passwords do not match.</p>
+                <div class="form-row">
+                    <label for="firstname">Firstname </label>
+                    <input type="text" name="firstname" required="required" placeholder="firstname" id="firstname">
+                </div>
+                <div class="form-row">
+                    <label for="lastname">Lastname </label>
+                    <input type="text" name="lastname" required="required" placeholder="lastname" id="lastname">
+                </div>
+                <div class="dob">
+                    <label for="month">Birthdate</label>
+                    <div class="dob-inputs">
+                        <input type="number" id="month" name="month" min="1" max="12" placeholder="MM">
+                        <input type="number" id="day" name="day" min="1" max="31" placeholder="DD">
+                        <input type="number" id="year" name="year" placeholder="YYYY">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank">Select</option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="AK">Alaska</option>
+                        <option value="FL">Florida</option>
+                        <option value="CA">California</option>
+                        <option value="OR">Oregon</option>
+                    </select>
+                </div>
+                <div class="gender">
+                    <label>Gender</label>
+                    <div class="gender-options">
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                    </div>
+                </div>            
+                <div class="checkbox-row">
+                    <input type="checkbox" name="agree" id="agree">
+                    <label for="agree">I agree to the Terms & Conditions</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 Jihye Jeong</p>
+    </footer>
+</body>
+</html>
