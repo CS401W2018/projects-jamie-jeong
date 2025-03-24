@@ -9,7 +9,7 @@
 <body>
     <header><h1>Web Design</h1></header>
     <main>
-        <form action="processing.html" method="get">
+        <form action="processing.html" method="get" id="myForm">
             <fieldset>
                 <legend>Account Info</legend>
                 <div class="form-row">
@@ -18,11 +18,15 @@
                 </div>
                 <div class="form-row">
                     <label for="email"> Email: </label>
-                    <input type="email" name="email"   value="jamiejeong@go.byuh.edu" id="email">
+                    <input type="email" name="email" id="email">
                 </div>
                 <div class="form-row">
                     <label for="pass"> Password: </label>
                     <input type="password" name="password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="age"> Age: </label>
+                    <input type="number" name="age" id="age">
                 </div>
                 <div class="form-row">
                     <label for="state">State:</label>
@@ -63,9 +67,52 @@
         <p>float, flex, grid, and etc,.</p>
         <h4>Why does the professor like to use flex?</h4>
         <p>It looks good on all screens because it makes the page as responsive page.</p>
+        <h3>Mar 24, 2025</h3>
+        <h4>What is JavaScript? How did it get its name?</h4>
+        <p>A programming language which is invented by the makers of Netscape. It was created in 1995. The name "JavaScript" was chosen for marketing reasons because Java was a popular language at the time, but JavaScript and Java are not the same.</p>
+        <h4>What are the two ways you can run JavaScript?</h4>
+        <p>In the DOM(Document Object model) or inside of the webpage, and node.js (Express.js)</p>
+        <h4>What was the most popular front-end js library?</h4>
+        <p>jQuery was the most popular front-end JavaScript library in the past.</p>
+        <h4>What is the most popular front-end js library today?</h4>
+        <p>React is the most popular front-end JavaScript library today.</p>
     </main>
     <footer>
         <p>&copy;2025 Jihye Jeong</p>
     </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit',function(event){
+            event.preventDefault();
+            alert("Form Submitted");
+
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+            const state = document.getElementById('state').value;
+            const comments = document.getElementById('comments').value;
+            
+            if (!fullname) {
+                alert("You need to enter your name.");
+                return;
+            }
+
+            if (!age || age<18) {
+                alert("You need to be 18");
+                return;
+            }
+
+            const formData = {
+                fullname: fullname,
+                email: email,
+                password: pass,
+                age: age,
+                state: state,
+                comments: comments,           
+            }
+
+            console.log(formData)
+        });
+    </script>
 </body>
 </html>
