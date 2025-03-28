@@ -76,11 +76,18 @@
         <p>jQuery was the most popular front-end JavaScript library in the past.</p>
         <h4>What is the most popular front-end js library today?</h4>
         <p>React is the most popular front-end JavaScript library today.</p>
+        <h3>Mar 28, 2025</h3>
+        <h4>What is AJAX?</h4>
+        <p>is a way for web pages to get data from a server without reloading the whole page. This makes websites faster and more interactive.</p>
+        <h4>Why do you put your JS Code in a separate file?</h4>
+        <p>Easier to read. It keeps HTML clean and organized. Easier to reuse. We can use the same JS file on multiple pages. Faster loading. Browsers can store (cache) the JS file to speed up websites.Better maintenance. It makes debugging and updating the code simpler.
+            
+            </p>
     </main>
     <footer>
         <p>&copy;2025 Jihye Jeong</p>
     </footer>
-    <script>
+    <!-- <script>
         document.getElementById('myForm').addEventListener('submit',function(event){
             event.preventDefault();
             alert("Form Submitted");
@@ -94,6 +101,11 @@
             
             if (!fullname) {
                 alert("You need to enter your name.");
+                return;
+            }
+
+            if (!firstname || !lastname) {
+                alert('First Name and Last Name cannot be blank,');
                 return;
             }
 
@@ -111,8 +123,21 @@
                 comments: comments,           
             }
 
-            console.log(formData)
+            console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET", "submit.json",true);
+            xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    alert('Form submitted successfully.');
+                } else if (xhr.readyState === 4) {
+                    alert('Error submitting form.');
+                }
+            };
+            shr.send(JSON.stringify(formData));
+            alert('Success: ${firstName} ${lastName}');
         });
-    </script>
+    </script> -->
+    <script src="form.js"></script>
 </body>
 </html>
