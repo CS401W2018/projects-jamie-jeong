@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="formprocessing.css">
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <div id="message"></div>
+        <form action="processing.html" method="get" id="myForm">
+            <fieldset>
+                <legend>Account Info</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name: </label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fullname">
+                </div>
+                <div class="form-row">
+                    <label for="email"> Email: </label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="form-row">
+                    <label for="pass"> Password: </label>
+                    <input type="password" name="password" id="pass">
+                </div>
+                <div class="form-row">
+                    <label for="age"> Age: </label>
+                    <input type="number" name="age" id="age">
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="Select">Select</option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI" selected>Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" value="freshman"> Freshman</label>
+                    <label><input type="radio" name="year" value="sophomore"> Sophomore</label>
+                </div>
+                <div class="radio-row">
+                         <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="agree" id="agree" checked>Remember Me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p>&copy;2025 Jihye Jeong</p>
+    </footer>
+    <script src="formprocessing.js"></script>
+</body>
+</html>
