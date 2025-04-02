@@ -1,0 +1,23 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+iframe {
+    border: 0;
+}
+
+.btn {
+    display: block;
+    padding: 10px;
+    color: aqua;
+    background-color: blue;
+    width: 110px;
+    text-align: center;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+
+.btn:hover {
+    background-color: lightblue;
+}
