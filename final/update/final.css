@@ -32,6 +32,14 @@ nav ul li a.active {
     text-decoration: underline;
 }
 
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px;
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -59,6 +67,10 @@ h1, h2 {
     padding: 2rem;
 }
 
+img {
+    width: 100%;
+}
+
 figure.destination {
     margin-bottom: 2rem;
 }
@@ -74,7 +86,7 @@ figure.destination figcaption {
     margin-top: 10px;
 }
 
-fighre.destination p {
+figure.destination p {
     font-size: 16px;
     color: #333;
 }
@@ -109,12 +121,43 @@ td {
     background-color: #fafafa;
 }
 
-/*form {
+form {
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    max-width: 500px;
+    margin: 20px auto;
 }
 
+.form-row {
+    margin-bottom: 1.2em;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    margin-bottom:10px;
+    font-weight: bold;
+}
+
+form input, form select {
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+  
+  button:hover {
+    background-color: #555;
+}
+  
 input, textarea {
     margin-bottom: 10px;
     padding: 10px;
@@ -128,7 +171,7 @@ input[type="submit"] {
     border: none;
     cursor: pointer;
 }
-*/
+
 
 @media (max-width: 768px) {
     nav ul {
