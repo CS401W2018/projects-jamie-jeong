@@ -196,7 +196,9 @@ input[type="submit"] {
     margin: 0 auto;
 }
 
-
+.destinations {
+    padding-left: 20px;
+}
 
 @media (max-width: 768px) {
     nav ul {
