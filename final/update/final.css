@@ -54,13 +54,8 @@ footer {
     position: relative;
     text-align: center;
     padding: 2rem;
-    color: white;
+    color: black;
     height: 400px; 
-    background: url("ktrip.png");
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: top center;
-    background-attachment: scroll; 
 }
 
 .hero-img {
@@ -197,6 +192,22 @@ input[type="submit"] {
 }
 
 .destinations {
+    padding-left: 20px;
+}
+
+.intro {
+    padding-left: 20px;
+}
+
+.video-section {
+    padding-left: 20px;
+}
+
+.highlights {
+    padding-left: 20px;
+}
+
+.quote {
     padding-left: 20px;
 }
 
