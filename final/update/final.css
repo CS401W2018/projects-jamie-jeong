@@ -51,12 +51,27 @@ footer {
 }
 
 .hero {
-    background-image: url('hero.jpg');
-    height: 400px;
-    background-size: cover;
-    color: white;
+    position: relative;
     text-align: center;
     padding: 2rem;
+    color: white;
+    height: 400px; 
+    background: url("ktrip.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: top center;
+    background-attachment: scroll; 
+}
+
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    z-index: -1;
 }
 
 h1, h2 {
@@ -80,7 +95,7 @@ figure.destination img {
     height: auto;
 }
 
-figure.destination figcaption {
+figcaption {
     font-size: 14px;
     color: #555;
     margin-top: 10px;
@@ -172,6 +187,16 @@ input[type="submit"] {
     cursor: pointer;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 50%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
 
 @media (max-width: 768px) {
     nav ul {
@@ -208,4 +233,8 @@ input[type="submit"] {
     caption {
         font-size: 18px;
     }
+
+    .video-container {
+        padding-bottom: 75%;
+      }
 }
